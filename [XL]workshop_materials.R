@@ -1,3 +1,9 @@
+## Notes: `ggplot` is not introduced in this file as I don't use `dataframe` here.
+## Need to check with Ian whether I should add `dataframe` and `ggplot`.
+
+
+
+
 ##--------Basic Exercises--------##
 
 #### object class used: vector, list, matrix
