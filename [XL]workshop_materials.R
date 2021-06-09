@@ -84,9 +84,9 @@ print(male_group$height)
 # cases and 5 from healthy controls) and 50 genes (5 up-regulated in disease, 5 
 # down-regulated in disease, 40 not differentially regulated)
 set.seed(1)
-# generate the expression of five genes that are up-regulated in the disease group compared to the control group
+# generate the expression of 5 genes that are up-regulated in the disease group compared to the control group
 gene_exp.up <- cbind( matrix( rnorm(25, 9, 0.3), 5, 5), matrix( rnorm(25, 7, 0.3), 5, 5) ) 
-# generate the expression of five genes that are down-regulated in the disease group compared to the control group
+# generate the expression of 5 genes that are down-regulated in the disease group compared to the control group
 gene_exp.down <- cbind( matrix( rnorm(25, 7, 0.3), 5, 5), matrix( rnorm(25, 9, 0.3), 5, 5) )
 # generate the expression of 40 genes that do not have differential expression across the 10 samples regardless of sample grouping
 gene_exp.others <- matrix( rnorm(400, 8, 0.3), 40, 10)
