@@ -102,7 +102,7 @@ colnames(gene_exp) <- paste("Sample", 1:10, sep="")
 ##--------Intermediate Exercises--------##
 
 #### object class used: vector, list, matrix
-#### function used: cor, t.test, fisher.test, if.else
+#### function used: cor, t.test, fisher.test, if.else, table, rbind
 
 ## Some Basic Tests
 
