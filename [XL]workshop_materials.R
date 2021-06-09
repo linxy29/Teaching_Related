@@ -108,7 +108,7 @@ colnames(gene_exp) <- paste("Sample", 1:10, sep="")
 ##--------Intermediate Exercises--------##
 
 #### object class used: vector, list, matrix
-#### function used: cor, t.test, fisher.test, if.else, table, rbind
+#### function used: cor, t.test, fisher.test, if.else, table, rbind, hist, plot, lines, boxplot
 
 ## Some Basic Tests
 
@@ -136,3 +136,17 @@ female_num = table(female_obesity)
 obesity_num = rbind(male_table, female_table)
 # 3-4 fisher's exact test
 fisher.test(obesity_num)
+
+## Some Basic Plots
+# 1. histogram plot
+hist(male_group$height, freq = FALSE, main = "Histogram Plot")
+# 2. density plot
+plot(density(male_group$height), main = "Density Plot")
+# 3. combine histogram plot and density plot
+hist(male_group$height, freq = FALSE, main = "Histogram and Density")
+lines(density(male_group$height), col = "red")
+# 4. boxplot of height in male group and female group
+boxplot(male_group$height, female_group$height, names = c("male", "female"), ylab = "height(cm)")
+# 5. heatmap of gene expression from 10 samples
+heatmap(gene_exp)
+
