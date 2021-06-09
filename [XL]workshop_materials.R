@@ -138,6 +138,7 @@ obesity_num = rbind(male_table, female_table)
 fisher.test(obesity_num)
 
 ## Some Basic Plots
+
 # 1. histogram plot
 hist(male_group$height, freq = FALSE, main = "Histogram Plot")
 # 2. density plot
